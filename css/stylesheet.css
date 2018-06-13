@@ -1,0 +1,97 @@
+/***********************************/
+/*********** BASELINE **************/
+/***********************************/
+
+html {
+  margin: 0 auto;
+}
+
+body {
+  font-size:16px;
+  background: #1C1E39;
+  font-family: 'IBM Plex Sans', Helvetica, Arial ,sans-serif;
+  margin: 0 0 100px;
+  min-height: 100%;
+
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+#container {
+  margin: 0 60px;
+}
+
+nav {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+#infographic-container {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 75%;
+  border: 1px solid #fff;
+  vertical-align: top;
+}
+
+/***********************************/
+/*********** HEADER **************/
+/***********************************/
+
+header {
+  margin: 60px;
+}
+
+/***********************************/
+/*********** NAVIGATION **************/
+/***********************************/
+
+
+nav ul li a {
+  color:#ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+nav ul li {
+    padding-bottom: 28px;
+}
+
+nav ul li a:hover {
+  font-weight: 700;
+}
+
+#nav-current {
+  width: 16px;
+  height: 4px;
+  background: #ffffff;
+  float: left;
+  margin: 6px 8px 6px 0;
+}
+
+/***********************************/
+/*********** FOOTER **************/
+/***********************************/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  background: #ffffff;
+  width: 100%;
+}
