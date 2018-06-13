@@ -1,5 +1,5 @@
 /***********************************/
-/*********** BASELINE **************/
+/*********** BASE STYLES ***********/
 /***********************************/
 
 html {
@@ -35,13 +35,13 @@ p {
 nav {
   display: inline-block;
   box-sizing: border-box;
-  width: 25%;
+  width: 20%;
 }
 
 #infographic-container {
   display: inline-block;
   box-sizing: border-box;
-  width: 75%;
+  width: 80%;
   border: 1px solid #fff;
   vertical-align: top;
 }
@@ -89,9 +89,25 @@ nav ul li a:hover {
 /***********************************/
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  height: 100px;
-  background: #ffffff;
   width: 100%;
+  padding: 30px 60px;
+}
+
+.footer-btn {
+  color: #ffffff;
+  background: #494B60;
+  padding: 10px 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 0 12px 12px 0;
+}
+
+
+#footer-btn-container {
+
 }
