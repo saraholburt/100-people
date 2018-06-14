@@ -3,15 +3,14 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <title>100 people</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/index.js"></script>
+  <title>100 PEOPLE</title>
 
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700|IBM+Plex+Serif:300,400,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -20,27 +19,43 @@
   <div id="container">
     <nav>
       <ul>
-        <li><a href="#"><div id="nav-current"></div>Gender</a></li>
-        <li><a href="#">Language</a></li>
-        <li><a href="#">Geography</a></li>
-        <li><a href="#">Age</a></li>
-        <li><a href="#">Religion</a></li>
-        <li><a href="#">Literacy</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Poverty</a></li>
-        <li><a href="#">Nutrition</a></li>
+        <li><a href="#" id="nav-gender">Gender</a></li>
+        <li><a href="#" id="nav-language">Language</a></li>
+        <li><a href="#" id="nav-geo" class="nav-current">Geography</a></li>
+        <li><a href="#" id="nav-age">Age</a></li>
+        <li><a href="#" id="nav-religion">Religion</a></li>
+        <li><a href="#" id="nav-literacy">Literacy</a></li>
+        <li><a href="#" id="nav-edu">Education</a></li>
+        <li><a href="#" id="nav-poverty">Poverty</a></li>
+        <li><a href="#" id="nav-nutrition">Nutrition</a></li>
       </ul>
     </nav><!--
     --><div id="infographic-container">
-        <p>Tesst</p>
+        <h1 id="infographic-mob-message">This site is best viewed on your desktop</h1>
       </div>
+      <div class="modal" id="about-modal">
+        <div class="modal-content">
+          <div id="back-btn"><i class="fas fa-arrow-left"></i><span>Back</span></div>
+          <h2>About</h2>
+          <p>It's hard to visualize a world of billions. Studies have shown that we have a cognitive limit to the number of stable, meaningful relationships we can maintain. Although this number varies from person to person,
+            our relationship limit is roughly capped at 150 individuals. When trying to comprehend the state of the world, this limit makes it difficult to empathize with the world at large. Imagining the world as a village
+            of 100 people is not a novel concept but it is something that is important to re-visit once in a while. To view the world as a village of 100 is to reduce the scope of an otherwise incomprehensible scale.</p><br>
+          <h3>Sources</h3>
+          <ul>
+            <li><a href="http://www.100people.org/">100 people: A world portrait</a></li>
+            <li><a href="https://usm.maine.edu/international/if-world-were-village-100-0">USM: If The World Were a Village of 100</a></li>
+            <li><a href="http://www.miniature-earth.com/">Miniature Earth</a></li>
+            <li><a href="http://donellameadows.org/archives/state-of-the-village-report/">State of the Village Report 1990</a></li>
+          </ul>
+      </div>
+    </div>
   </div>
   <footer>
-    <div id="footer-info-container"></div><!--
-    --><div id="footer-btn-container">
-      <a href="#" class="footer-btn">About</a>
-      <a href="#" class="footer-btn">Share</a>
+    <div id="footer-btn-container">
+      <a href="#" class="footer-btn" id="btn-about">About</a>
+      <a href="#" class="footer-btn" id="btn-share">Share</a>
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 </html>
