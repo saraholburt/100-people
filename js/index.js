@@ -23,13 +23,19 @@ var navEdu = document.getElementById('nav-edu');
 var navPoverty = document.getElementById('nav-poverty');
 var navNutrition = document.getElementById('nav-nutrition');
 
-navLanguage.onclick = function() {
-  changeNav(navGeo, navLanguage);
+var navList = [navGender, navLanguage, navGeo, navAge, navReligion, navLiteracy, navEdu, navPoverty, navNutrition];
+
+//var navMenu = document.getElementById('nav-menu');
+
+navList[4].onclick = function() {
+  for (var i = 0; i<navList.length; i++) {
+      removeNavItem(navList[i]);
+      navList[4].classList.add('nav-current');
+  }
 }
 
-function changeNav(currentNavItem, newNavItem) {
+function removeNavItem(currentNavItem) {
   if (currentNavItem.classList.contains('nav-current')) {
     currentNavItem.classList.remove('nav-current');
-    newNavItem.classList.add('nav-current');
   }
 }
