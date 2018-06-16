@@ -42,6 +42,7 @@ navList[1].onclick = function() {
       removeNavItem(navList[i]);
       navList[1].classList.add('nav-current');
   }
+  language();
 }
 
 navList[2].onclick = function() {
@@ -100,11 +101,34 @@ function removeNavItem(currentNavItem) {
 
 //INFOGRAPHIC
 
+
 function gender() {
   var canvas = document.getElementById('infographic-canvas');
   var ctx = canvas.getContext("2d");
-  ctx.beginPath();
-  ctx.arc(95,50,40,0,2*Math.PI);
-  ctx.fill();
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  var genderFem = new Image();
+  var genderMale = new Image();
+
+  ctx.save();
+
+  genderFem.addEventListener('load', function() {
+    ctx.drawImage(genderFem, 0, 0);
+  }, false);
+
+  genderFem.src = "images/gender-female.svg";
+  genderMale.src = "images/gender-male.svg";
+}
+
+function language() {
+  var canvas = document.getElementById('infographic-canvas');
+  var ctx = canvas.getContext("2d");
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  for (var i = 0; i<=50; i++) {
+    ctx.beginPath();
+    ctx.arc((i*i), (10+i), 15, 0, 2 * Math.PI);
+    ctx.fillStyle = '#ffffff';
+    ctx.fill();
+  }
 }
