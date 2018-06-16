@@ -77,8 +77,6 @@ nav {
   display: inline-block;
   box-sizing: border-box;
   width: 80%;
-  background-color:rgba(256,256,256,0.4);
-  height:800px;
   vertical-align: top;
 }
 
@@ -98,7 +96,7 @@ nav {
 
 
 /***********************************/
-/*********** HEADER **************/
+/************* HEADER **************/
 /***********************************/
 
 header {
@@ -106,7 +104,7 @@ header {
 }
 
 /***********************************/
-/*********** NAVIGATION **************/
+/*********** NAVIGATION ************/
 /***********************************/
 
 
@@ -145,6 +143,10 @@ nav ul li a:active {
 
 #infographic-mob-message {
   display: none;
+}
+
+#infographic-canvas {
+  border: 1px solid #ffffff;
 }
 
 /***********************************/
@@ -243,6 +245,10 @@ footer {
     font-weight:300;
     text-align: center;
     text-transform: none;
+  }
+
+  #infographic-canvas {
+    display:none;
   }
 
   .modal-content {

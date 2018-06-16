@@ -25,11 +25,16 @@ var navNutrition = document.getElementById('nav-nutrition');
 
 var navList = [navGender, navLanguage, navGeo, navAge, navReligion, navLiteracy, navEdu, navPoverty, navNutrition];
 
+if (navList[0].classList.contains('nav-current')) {
+  gender();
+}
+
 navList[0].onclick = function() {
   for (var i = 0; i<navList.length; i++) {
       removeNavItem(navList[i]);
       navList[0].classList.add('nav-current');
   }
+      gender();
 }
 
 navList[1].onclick = function() {
@@ -91,4 +96,15 @@ function removeNavItem(currentNavItem) {
   if (currentNavItem.classList.contains('nav-current')) {
     currentNavItem.classList.remove('nav-current');
   }
+}
+
+//INFOGRAPHIC
+
+function gender() {
+  var canvas = document.getElementById('infographic-canvas');
+  var ctx = canvas.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(95,50,40,0,2*Math.PI);
+  ctx.fill();
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
 }
